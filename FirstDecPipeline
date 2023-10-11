@@ -1,6 +1,14 @@
 pipeline{
     agent any
     stages {
+        stage('Git CheckOut'){
+            steps{
+                git (
+                    url: https://github.com/singhiam15/JDeclarative.git
+                    branch: main
+                )
+            }
+        }
         stage('Welcome Step'){
             steps{
                 echo 'welcome to LambdaTest'
