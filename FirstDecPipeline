@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stags {
+        stage('Welcome Step'){
+            steps{
+                echo 'welcome to LambdaTest'
+            }
+        }
+    }
+}
