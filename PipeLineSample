@@ -4,7 +4,7 @@ pipeline{
         stage('Git Check Out'){
             steps{
                 git(
-                    url: "https://github.com/singhiam15/JDeclarative.git"
+                    url: "https://github.com/singhiam15/JDeclarative.git",
                     branch: "main"
                 )
             }
